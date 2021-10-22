@@ -56,7 +56,7 @@ MonoBehaviour:
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
     - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: c4903d5db157a914f945e3662788b79d, type: 2}
   - mapName: OldBattle
     scene:
       sceneAsset: {fileID: 102900000, guid: a5cc9d207f9bf274bb65271eef7d334d, type: 3}
@@ -65,7 +65,7 @@ MonoBehaviour:
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
     - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: c4903d5db157a914f945e3662788b79d, type: 2}
   - mapName: BattleRoyale
     scene:
       sceneAsset: {fileID: 102900000, guid: 544be37376f7bc04fbd1f936db394efa, type: 3}
@@ -129,7 +129,7 @@ MonoBehaviour:
   products:
   - {fileID: 11400000, guid: 71b081bc5c9b0ac4092991c23559bcf4, type: 2}
   currencies:
-  - id: GOLD
+  - id: GO
     startAmount: 1000
     name: Gold
     symbol: G.
@@ -171,7 +171,18 @@ MonoBehaviour:
       m_Calls: []
   onRefresh:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114399739619211160}
+        m_MethodName: UpdateAvailableItems
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRefreshFirstTime:
     m_PersistentCalls:
       m_Calls: []
@@ -192,4 +203,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameInstance: {fileID: 114399739619211160}
   monetizationManager: {fileID: 114606359588884596}
+  packages:
+  - {fileID: 11400000, guid: 87a0b5d4181d7eb40afd8c973e9166e1, type: 2}
   exportingCatalogVersion: Catalog-1
